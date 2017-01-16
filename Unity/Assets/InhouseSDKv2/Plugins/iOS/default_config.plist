@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ads_service</key>
+	<dict>
+		<key>Image</key>
+		<dict>
+			<key>iPad</key>
+			<string>https://www.dropbox.com/s/qafmpuvoupt9kt1/Pads.png?dl=1</string>
+			<key>iPhone4</key>
+			<string>https://www.dropbox.com/s/k88voql3v0canie/4ads.png?dl=1</string>
+			<key>iPhone5</key>
+			<string>https://www.dropbox.com/s/mtkdg4rvwuiuccn/5ads.png?dl=1</string>
+			<key>iPhone6</key>
+			<string>https://www.dropbox.com/s/0bdn42iecx6c4me/6ads.png?dl=1</string>
+			<key>iPhone6plus</key>
+			<string>https://www.dropbox.com/s/1elrsdr25bsq3l1/6Pads.png?dl=1</string>
+		</dict>
+		<key>NumberToDisplay</key>
+		<integer>3</integer>
+		<key>URL</key>
+		<string>https://www.dropbox.com/s/1elrsdr25bsq3l1/6Pads.png?dl=1</string>
+		<key>ImageURL</key>
+		<string>https://www.dropbox.com/s/1elrsdr25bsq3l1/6Pads.png?dl=1</string>
+	</dict>
+	<key>AppShareText</key>
+	<string>Share game</string>
+	<key>AppURL</key>
+	<string>https://www.reddit.com.vn</string>
+	<key>AppReviewURL</key>
+	<string>https://www.google.com</string>
+	<key>ContactMailAddress</key>
+	<string>chaung@hdapps.io</string>
+	<key>ContactMailSubject</key>
+	<string>Colorin Feedback</string>
+	<key>IsProVersion</key>
+	<true/>
+	<key>Google_Ads</key>
+	<dict>
+		<key>BannerAdUnitID</key>
+		<string>ca-app-pub-8936882413582753/5554423021</string>
+		<key>DisplayFrequencyOfInterstitial</key>
+		<integer>100</integer>
+		<key>InterstitialAdUnitID</key>
+		<string>ca-app-pub-8936882413582753/8507889424</string>
+	</dict>
+	<key>PaidAlert</key>
+	<dict>
+		<key>Enable</key>
+		<true/>
+		<key>Languages</key>
+		<dict>
+			<key>en</key>
+			<dict>
+				<key>Cancel</key>
+				<string>No, Thanks</string>
+				<key>Message</key>
+				<string>Please upgrade to Pro version for better experience</string>
+				<key>OK</key>
+				<string>Sure</string>
+				<key>Title</key>
+				<string>Go Pro?</string>
+			</dict>
+			<key>pt</key>
+			<dict>
+				<key>Cancel</key>
+				<string>No, Thanks Potuguese</string>
+				<key>Message</key>
+				<string>Please upgrade to Pro version for better experience Potuguese</string>
+				<key>OK</key>
+				<string>Sure</string>
+				<key>Title</key>
+				<string>Go Pro? Potuguese</string>
+			</dict>
+		</dict>
+		<key>Second</key>
+		<integer>3</integer>
+		<key>URL</key>
+		<string>http://bit.ly/urlmusiepro</string>
+	</dict>
+	<key>RateAlert</key>
+	<dict>
+		<key>Languages</key>
+		<dict>
+			<key>en</key>
+			<dict>
+				<key>Message</key>
+				<string>If Audube has offered you great experience. Many thanks!</string>
+				<key>Cancel</key>
+				<string>No, thanks</string>
+				<key>OK</key>
+				<string>Rate Now</string>
+				<key>Title</key>
+				<string>Adore Audube?</string>
+			</dict>
+			<key>vi</key>
+			<dict>
+				<key>Message</key>
+				<string>Náº¿u báº¡n Ä‘Ã¡nh giÃ¡ cao nhá»¯ng gÃ¬ Audube Ä‘Ã£ mang Ä‘áº¿n cho báº¡n, chÃºng tÃ´i ráº¥t biáº¿t Æ¡n náº¿u báº¡n cÃ³ thá»ƒ Ä‘Ã¡nh giÃ¡ á»©ng dá»¥ng nÃ y trÃªn App Store. Cáº£m Æ¡n báº¡n.</string>
+				<key>Cancel</key>
+				<string>KhÃ´ng, cáº£m Æ¡n</string>
+				<key>OK</key>
+				<string>ÄÃ¡nh giÃ¡ ngay</string>
+				<key>Title</key>
+				<string>Báº¡n yÃªu thÃ­ch Audube?</string>
+			</dict>
+		</dict>
+		<key>NumberToDisplayRatingPopup</key>
+		<integer>3</integer>
+		<key>URL</key>
+		<string>http://apple.co/1YLXagj</string>
+	</dict>
+	<key>RemoveAds</key>
+	<dict>
+		<key>Languages</key>
+		<dict>
+			<key>en</key>
+			<dict>
+				<key>Message</key>
+				<string>Upgrade nowdds to remove adscccccc</string>
+				<key>NoThanks</key>
+				<string>No, Thanks</string>
+				<key>RemoveAds</key>
+				<string>Remove ads</string>
+				<key>Title</key>
+				<string>Remove Ads</string>
+			</dict>
+			<key>vi</key>
+			<dict>
+				<key>Message</key>
+				<string>NÃ¢ng cáº¥p Ä‘á»ƒ gá»¡ bá» quáº£ng cÃ¡o</string>
+				<key>NoThanks</key>
+				<string>KhÃ´ng, cáº£m Æ¡n</string>
+				<key>RemoveAds</key>
+				<string>Gá»¡ quáº£ng cÃ¡o</string>
+				<key>Title</key>
+				<string>Gá»¡ bá» quáº£ng cÃ¡o</string>
+			</dict>
+		</dict>
+		<key>ProductID</key>
+		<string>io.hdapps.colorin.removeads</string>
+	</dict>
+	<key>GameCenter</key>
+	<dict>
+		<key>LeaderboardID</key>
+		<string>grp.multiplayer_win</string>
+	</dict>
+	<key>Version</key>
+	<integer>12</integer>
+</dict>
+</plist>

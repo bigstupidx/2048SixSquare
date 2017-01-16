@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareCaptureViewController">
+            <connections>
+                <outlet property="mode1" destination="kYU-8R-nZr" id="G3x-7u-1eh"/>
+                <outlet property="mode2" destination="Dmm-aN-dan" id="KcP-ww-zRk"/>
+                <outlet property="mode3" destination="Smc-ou-e8o" id="oYg-e0-WVS"/>
+                <outlet property="mode4" destination="5q0-kN-ain" id="dcY-vj-Cij"/>
+                <outlet property="mode5" destination="roh-ZT-z8c" id="LZQ-l2-hQV"/>
+                <outlet property="node1" destination="W4C-Ev-wRI" id="MLU-nm-89B"/>
+                <outlet property="node2" destination="oMd-Ne-BIz" id="jIo-qD-zO8"/>
+                <outlet property="node3" destination="1jc-Fx-e9N" id="ztk-dX-ecQ"/>
+                <outlet property="node4" destination="dmN-t5-WyH" id="72M-Ab-h5L"/>
+                <outlet property="node5" destination="DcH-9c-FZ3" id="X8s-5A-Hqj"/>
+                <outlet property="score1" destination="hm8-hr-2ow" id="Q19-eY-mMN"/>
+                <outlet property="score2" destination="zlM-GJ-C2U" id="TnM-1l-q2M"/>
+                <outlet property="score3" destination="lxn-m2-4QX" id="QfM-i3-kML"/>
+                <outlet property="score4" destination="NVl-ar-V1g" id="Ynj-D6-E93"/>
+                <outlet property="score5" destination="40w-So-65H" id="Uri-yu-qaA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4C-Ev-wRI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hF1-Pp-edz">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYU-8R-nZr" userLabel="lblMode">
+                            <rect key="frame" x="26" y="315" width="334" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm8-hr-2ow" userLabel="lblScore">
+                            <rect key="frame" x="0.0" y="190" width="206" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.800231073943662" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40505790710449219" green="0.99129670858383179" blue="0.95343500375747681" alpha="0.0" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-Ne-BIz">
+                    <rect key="frame" x="112" y="120" width="375" height="360"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-op-79b">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmm-aN-dan" userLabel="lblMode">
+                            <rect key="frame" x="26" y="315" width="334" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlM-GJ-C2U" userLabel="lblScore">
+                            <rect key="frame" x="-5" y="190" width="206" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.80023107390000003" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.4050579071" green="0.99129670859999997" blue="0.95343500380000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-Fx-e9N">
+                    <rect key="frame" x="112" y="120" width="375" height="360"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share3.png" translatesAutoresizingMaskIntoConstraints="NO" id="ih5-4k-dTh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smc-ou-e8o" userLabel="lblMode">
+                            <rect key="frame" x="26" y="315" width="334" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxn-m2-4QX" userLabel="lblScore">
+                            <rect key="frame" x="8" y="190" width="206" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.80023107390000003" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.4050579071" green="0.99129670859999997" blue="0.95343500380000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmN-t5-WyH">
+                    <rect key="frame" x="112" y="120" width="375" height="360"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share4.png" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-S4-Rc7">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q0-kN-ain" userLabel="lblMode">
+                            <rect key="frame" x="26" y="315" width="334" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVl-ar-V1g" userLabel="lblScore">
+                            <rect key="frame" x="-4" y="190" width="206" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.80023107390000003" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.4050579071" green="0.99129670859999997" blue="0.95343500380000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcH-9c-FZ3">
+                    <rect key="frame" x="112" y="120" width="375" height="360"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share5.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLi-ll-OBP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roh-ZT-z8c" userLabel="lblMode">
+                            <rect key="frame" x="26" y="315" width="334" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40w-So-65H" userLabel="lblScore">
+                            <rect key="frame" x="-16" y="190" width="206" height="57"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.80023107390000003" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.4050579071" green="0.99129670859999997" blue="0.95343500380000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="32" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share1.png" width="955" height="880"/>
+        <image name="share2.png" width="955" height="880"/>
+        <image name="share3.png" width="955" height="880"/>
+        <image name="share4.png" width="955" height="880"/>
+        <image name="share5.png" width="956" height="880"/>
+    </resources>
+</document>

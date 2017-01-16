@@ -138,11 +138,15 @@ public class CellManager : MonoBehaviour
 						}
 				}
 		}
+
 	
 		// Update is called once per frame
 		void Update ()
 		{
-				if (!ktDeath.isDie) {
+//				ktDeath.isDie = true;
+				if (ktDeath.isDie) {
+					Debug.Log ("Da Chet Roi nek");
+				} else {
 						
 						if (Input.GetMouseButtonDown (0)) {
 								x = Input.mousePosition.x;
@@ -339,7 +343,7 @@ public class CellManager : MonoBehaviour
 												fTime = Time.time;
 										}
 										isPress = false;
-										SendMessage ("ktdead");
+//										SendMessage ("ktdead");
 								}
 								
 						}			
