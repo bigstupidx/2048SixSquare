@@ -20,8 +20,7 @@ public class GameMainManager : MonoBehaviour {
 	void Awake() {
 		_soundMrg = FindObjectOfType<SoundManager> ();
 //		string urlPlist = "https://www.dropbox.com/s/h01v3s1kdgep8pr/config.plist?dl=1";
-//		InhouseSDK.getInstance ().Initialize (urlPlist, false, typeof(PaidAlertMgr), typeof(NewVersionMgr), typeof(AdServiceMgr), typeof(AdmobMgr),
-//			typeof(RemoveAdsMgr), typeof(GameCenterMgr), typeof(RateAlertMgr));
+		InhouseSDK.getInstance ().Initialize ("https://www.dropbox.com/s/hu9lslj6lbz9len/config.plist?dl=1", true, typeof(AdsMgr), typeof(GameCenterMgr));
 	}
 
 	void Start(){

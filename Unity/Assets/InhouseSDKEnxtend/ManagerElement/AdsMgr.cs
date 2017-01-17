@@ -8,9 +8,6 @@ using UnityEngine.UI;
 using UnityEngine.Advertisements;
 #endif
 
-#if !FACEBOOK_ADS_DISABLE
-using AudienceNetwork;
-#endif
 
 
 public class AdsMgr : BaseMgr {
@@ -105,14 +102,6 @@ public class AdsMgr : BaseMgr {
 			UnityAds ads = new UnityAds (this, unityConfig);
 			ads.Init ();
 			_ads.Add (TAG_UNITYADS, ads);
-		}
-		{
-			InhouseSDK.FBAdsConfig fbAdsConfig = (InhouseSDK.FBAdsConfig)_config.Ads.Services [TAG_FBADS];
-			if (fbAdsConfig == null)
-				throw new UnityException ("AdsMgr: invalid config");
-			FacebookAds ads = new FacebookAds (this, fbAdsConfig);
-			ads.Init ();
-			_ads.Add (TAG_FBADS, ads);
 		}
 
 		ShowBanner ();
@@ -209,10 +198,6 @@ public class AdsMgr : BaseMgr {
 				}
 			}
 		}
-	}
-
-	public FacebookAds GetFBAdService() {
-		return (FacebookAds)_ads[TAG_FBADS];
 	}
 
 	public class BaseAds {
@@ -348,161 +333,6 @@ public class AdsMgr : BaseMgr {
 		}
 	}
 
-	public class FacebookAds : BaseAds {
-		InhouseSDK.FBAdsConfig _config;
-
-		AdView _adBanner;
-		InterstitialAd _adIntersitial;
-		private bool isLoaded = false;
-		bool _isBannerShowing = false;
-
-		public FacebookAds(AdsMgr manager, InhouseSDK.FBAdsConfig config) : base(manager) {
-			_config = config;
-		}
-
-		public override void Init() {
-			Debug.Log ("Init Facebook Ads");
-			if (_manager._config.Ads.AdsType[TAG_ADSTYPE_INTERSITIAL] == TAG_FBADS)
-				LoadInterstitial ();
-		}
-
-		public override void ShowBanner() {
-			if (_manager._didInit && !InhouseSDK.getInstance ().getIsPro ()) {
-
-				AdView adView = new AdView (_config.BannerId, AdSize.BANNER_HEIGHT_50);
-				this._adBanner = adView;
-				this._adBanner.Register (InhouseSDK.getInstance ().gameObject);
-
-				// Set delegates to get notified on changes or when the user interacts with the ad.
-				this._adBanner.AdViewDidLoad = (delegate() {
-					Debug.Log ("Ad view loaded.");
-					double y = 0;
-					double height = AudienceNetwork.Utility.AdUtility.convert (Screen.height);
-					y = (AdsMgr.BannerPosition == AdsMgr.AdBannerPosition.Bottom) ? height - 50 : 0;
-					this._adBanner.Show (y);
-					_isBannerShowing = true;
-				});
-				adView.AdViewDidFailWithError = (delegate(string error) {
-					Debug.Log ("Ad view failed to load with error: " + error);
-				});
-				adView.AdViewWillLogImpression = (delegate() {
-					Debug.Log ("Ad view logged impression.");
-				});
-				adView.AdViewDidClick = (delegate() {
-					Debug.Log ("Ad view clicked.");
-				});
-
-				// Initiate a request to load an ad.
-				adView.LoadAd ();
-			}
-		}
-
-		public override void HideBanner() {
-			if (this._adBanner) {
-				this._adBanner.Dispose ();
-				_isBannerShowing = false;
-				Debug.Log ("Ad view close.");
-			}
-		}
-
-		public override bool IsBannerShowing ()
-		{
-			return _isBannerShowing;
-		}
-
-		public void LoadInterstitial (bool forceShow = false) {
-			if (_adIntersitial != null)
-				return;
-			InterstitialAd interstitialAd = new InterstitialAd (_config.IntersitialId);
-			this._adIntersitial = interstitialAd;
-			this._adIntersitial.Register (InhouseSDK.getInstance().gameObject);
-
-			// Set delegates to get notified on changes or when the user interacts with the ad.
-			this._adIntersitial.InterstitialAdDidLoad = (delegate() {
-				Debug.Log("Interstitial ad loaded.");
-				this.isLoaded = true;
-				if (forceShow)
-					_adIntersitial.Show();
-			});
-			_adIntersitial.InterstitialAdDidFailWithError = (delegate(string error) {
-				Debug.Log("Interstitial ad failed to load with error: " + error);
-			});
-			_adIntersitial.InterstitialAdWillLogImpression = (delegate() {
-				Debug.Log("Interstitial ad logged impression.");
-			});
-			_adIntersitial.InterstitialAdDidClick = (delegate() {
-				Debug.Log("Interstitial ad clicked.");
-			});
-			_adIntersitial.InterstitialAdDidClose = (delegate() {
-				Debug.Log("Interstitial ad close.");
-				if (_adIntersitial != null)
-					_adIntersitial.Dispose();
-				_adIntersitial = null;
-				Debug.Log("Interstitial reload ads.");
-				LoadInterstitial();
-			});
-
-			// Initiate the request to load the ad.
-			this._adIntersitial.LoadAd ();
-		}
-
-		public override void ShowIntersitial ()
-		{
-			if (_manager._didInit && !InhouseSDK.getInstance ().getIsPro ()) {
-				Debug.Log ("Loaded: " + isLoaded.ToString());
-				if (this.isLoaded) {
-					this._adIntersitial.Show ();
-				} else {
-					HDDebug.Log ("FBAds intersitial not loaded");
-					if (_adIntersitial == null)
-						LoadInterstitial (true);
-				}
-			}
-		}
-
-		public override void ShowVideoAward (Action<bool> callback)
-		{
-			HDDebug.Log ("Facebook ads: not support VideosReward Ads");
-		}
-
-		/// 
-		/// NATIVE ADS
-		/// 
-		/// 
-		/// 
-		NativeAd nativeAd;
-		public void GetNativeAds (GameObject root, Button[] actionButtons, Action<NativeAd> complete)
-		{
-			HDDebug.Log ("FBAds: Request native ads: " + _config.NativeId);
-			nativeAd = new AudienceNetwork.NativeAd (_config.NativeId);
-
-			nativeAd.RegisterGameObjectForImpression (root, actionButtons);
-
-			// Set delegates to get notified on changes or when the user interacts with the ad.
-			nativeAd.NativeAdDidLoad = (delegate() {
-				Debug.Log("FBNative ad loaded.");
-				if (complete != null)
-					complete(nativeAd);
-			});
-			nativeAd.NativeAdDidFailWithError = (delegate(string error) {
-				Debug.Log("Native ad failed to load with error: " + error);
-				if (complete != null)
-					complete(null);
-			});
-			nativeAd. NativeAdWillLogImpression = (delegate() {
-				Debug.Log("Native ad logged impression.");
-			});
-			nativeAd.NativeAdDidClick = (delegate() {
-				Debug.Log("Native ad clicked.");
-			});
-			// Initiate a request to load an ad.
-			nativeAd.LoadAd ();
-		}
-
-		public string GetNativeAdsId() {
-			return _config.NativeId;
-		}
-	}
 
 
 }
