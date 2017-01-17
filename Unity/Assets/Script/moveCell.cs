@@ -10,7 +10,6 @@ public class moveCell : MonoBehaviour
 		string s2;
 		int i ;
 		int j;
-		float fTime = 0;
 		public	bool kt = false;
 		public Animator anime;
 		// Use this for initialization

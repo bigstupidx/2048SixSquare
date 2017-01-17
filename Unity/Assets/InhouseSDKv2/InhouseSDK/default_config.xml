@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ads_service</key>
+	<dict>
+		<key>ImageURL</key>
+		<string>http://media.techz.vn/upload/2016/09/07/image-techz-1473222770.jpg</string>
+		<key>NumberToDisplay</key>
+		<integer>3</integer>
+		<key>URL</key>
+		<string>http://hdapps.io</string>
+	</dict>
+	<key>AppReviewURL</key>
+	<string>https://appsto.re/us/kUkgfb.i</string>
+	<key>AppShareText</key>
+	<string>Share game Tank Online</string>
+	<key>AppURL</key>
+	<string>https://appsto.re/us/kUkgfb.i</string>
+	<key>Character</key>
+	<dict>
+		<key>Characters</key>
+		<dict>
+			<key>Tank1</key>
+			<integer>0</integer>
+			<key>Tank10</key>
+			<integer>70</integer>
+			<key>Tank2</key>
+			<integer>50</integer>
+			<key>Tank3</key>
+			<integer>50</integer>
+			<key>Tank4</key>
+			<integer>50</integer>
+			<key>Tank5</key>
+			<integer>50</integer>
+			<key>Tank6</key>
+			<integer>70</integer>
+			<key>Tank7</key>
+			<integer>70</integer>
+			<key>Tank8</key>
+			<integer>70</integer>
+			<key>Tank9</key>
+			<integer>70</integer>
+		</dict>
+	</dict>
+	<key>FacebookURL</key>
+	<string>http://facebook.com</string>
+	<key>GameCenter</key>
+	<dict>
+		<key>LeaderboardID</key>
+		<string>io.hdapps2.tankio.leaderboard2</string>
+	</dict>
+	<key>Google_Ads</key>
+	<dict>
+		<key>BannerAdUnitID</key>
+		<string>ca-app-pub-8800843716088438/9396753502</string>
+		<key>DisplayFrequencyOfInterstitial</key>
+		<integer>39</integer>
+		<key>InterstitialAdUnitID</key>
+		<string>ca-app-pub-8800843716088438/4826953105</string>
+		<key>UnityRewardID</key>
+		<string>1169217</string>
+		<key>UnityRewardKey</key>
+		<string>rewardedVideoZone</string>
+		<key>UsingAdmod</key>
+		<false/>
+	</dict>
+	<key>InAppPurchase</key>
+	<dict>
+		<key>InApp-Double</key>
+		<dict>
+			<key>ProductId</key>
+			<string>io.hdapps2.hdtankio.package3</string>
+			<key>Data</key>
+			<dict>
+				<key>Price</key>
+				<string>$3.99</string>
+				<key>Coin</key>
+				<integer>500</integer>
+			</dict>
+		</dict>
+		<key>InApp-Package_3</key>
+		<dict>
+			<key>ProductId</key>
+			<string>io.hdapps2.hdtankio.package3</string>
+			<key>Data</key>
+			<dict>
+				<key>Price</key>
+				<string>$3.99</string>
+				<key>Coin</key>
+				<integer>500</integer>
+			</dict>
+		</dict>
+		<key>InApp-Package_2</key>
+		<dict>
+			<key>ProductId</key>
+			<string>io.hdapps2.hdtankio.package2</string>
+			<key>Data</key>
+			<dict>
+				<key>Price</key>
+				<string>$2.99</string>
+				<key>Coin</key>
+				<integer>300</integer>
+			</dict>
+		</dict>
+		<key>InApp-Package_1</key>
+		<dict>
+			<key>ProductId</key>
+			<string>io.hdapps2.hdtankio.package1</string>
+			<key>Data</key>
+			<dict>
+				<key>Price</key>
+				<string>$0.99</string>
+				<key>Coin</key>
+				<integer>100</integer>
+			</dict>
+		</dict>
+	</dict>
+	<key>IsProVersion</key>
+	<false/>
+	<key>LinkFaceBook</key>
+	<string>http://i.giphy.com/BMJ9Ok9lRvaAE.gif</string>
+	<key>OneSignal</key>
+	<dict>
+		<key>AndroidKey</key>
+		<string></string>
+		<key>Enable</key>
+		<true/>
+		<key>IOSKey</key>
+		<string>bb0998cd-9b1e-4cc8-9ea0-89342a796099</string>
+	</dict>
+	<key>PaidAlert</key>
+	<dict>
+		<key>Enable</key>
+		<true/>
+		<key>Languages</key>
+		<dict>
+			<key>en</key>
+			<dict>
+				<key>Cancel</key>
+				<string>No, Thanks</string>
+				<key>Message</key>
+				<string>Please upgrade to Pro version for better experience</string>
+				<key>OK</key>
+				<string>Sure</string>
+				<key>Title</key>
+				<string>Paid Alert</string>
+			</dict>
+			<key>fr</key>
+			<dict>
+				<key>Cancel</key>
+				<string>No, Thanks</string>
+				<key>Message</key>
+				<string>Please upgrade to Pro version for better experience</string>
+				<key>OK</key>
+				<string>Sure</string>
+				<key>Title</key>
+				<string>Paid Alert</string>
+			</dict>
+			<key>vi</key>
+			<dict>
+				<key>Cancel</key>
+				<string>Bỏ qua</string>
+				<key>Message</key>
+				<string>Nâng cấp lên phiên bản Pro ngay bây giờ</string>
+				<key>OK</key>
+				<string>Đồng ý</string>
+				<key>Title</key>
+				<string>Paid Alert</string>
+			</dict>
+		</dict>
+		<key>Second</key>
+		<integer>3</integer>
+		<key>URL</key>
+		<string>https://appsto.re/us/kUkgfb.i</string>
+	</dict>
+	<key>RateAlert</key>
+	<dict>
+		<key>Languages</key>
+		<dict>
+			<key>en</key>
+			<dict>
+				<key>Cancel</key>
+				<string>Cancel</string>
+				<key>Message</key>
+				<string>Please leave us 5 stars!</string>
+				<key>OK</key>
+				<string>OK</string>
+				<key>Title</key>
+				<string>Rate Alert</string>
+			</dict>
+			<key>fr</key>
+			<dict>
+				<key>Cancel</key>
+				<string>Cancel</string>
+				<key>Message</key>
+				<string>Please leave us 5 stars!</string>
+				<key>OK</key>
+				<string>OK</string>
+				<key>Title</key>
+				<string>Rate Alert</string>
+			</dict>
+			<key>vi</key>
+			<dict>
+				<key>Cancel</key>
+				<string>Bỏ qua</string>
+				<key>Message</key>
+				<string>Đánh giá 5 sao ngay bây giờ</string>
+				<key>OK</key>
+				<string>Đồng ý</string>
+				<key>Title</key>
+				<string>Rate Alert</string>
+			</dict>
+		</dict>
+		<key>NumberToDisplayRatingPopup</key>
+		<integer>3</integer>
+		<key>URL</key>
+		<string>https://appsto.re/us/kUkgfb.i</string>
+	</dict>
+	<key>RemoveAds</key>
+	<dict>
+		<key>Languages</key>
+		<dict>
+			<key>en</key>
+			<dict>
+				<key>Cancel</key>
+				<string>No, Thanks</string>
+				<key>Message</key>
+				<string>Upgrade now to remove ads</string>
+				<key>OK</key>
+				<string>Remove ads</string>
+				<key>Title</key>
+				<string>REMOVE ADS</string>
+			</dict>
+			<key>vi</key>
+			<dict>
+				<key>Cancel</key>
+				<string>Bỏ qua</string>
+				<key>Message</key>
+				<string>Gỡ quảng cáo ngay bây giờ</string>
+				<key>OK</key>
+				<string>Đồng ý</string>
+				<key>Title</key>
+				<string>Remove Ads</string>
+			</dict>
+		</dict>
+		<key>ProductID</key>
+		<string>io.hdapps2.hdtankio.removeads</string>
+	</dict>
+	<key>Version</key>
+	<integer>0</integer>
+	<key>Hints</key>
+	<dict>
+		<key>Coin</key>
+		<integer>2</integer>
+		<key>TimeToShowInvite</key>
+		<integer>0</integer>
+		<key>TimeToShowShare</key>
+		<integer>0</integer>
+		<key>TimeToShowRate</key>
+		<integer>0</integer>
+		<key>EnableFreeFunction</key>
+		<true/>
+		<key>TimetoShowHint</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
